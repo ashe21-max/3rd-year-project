@@ -1,156 +1,113 @@
-# 🏠 Housing Allocation System — File Uploading Project
+# 📁 Victor's File Uploading System (PHP)
 
 ## 📌 Overview
 
-This project is a **full-stack web application** developed for a 3rd-year Web Programming course.
-It focuses on **secure file uploading, user management, and housing allocation workflows**.
-
-Users can register, log in, upload required documents, and interact with the system through a modern web interface.
+This project is a **simple file uploading web application** built using **PHP**.
+It was developed as a **3rd-year Web Programming project** to demonstrate how files can be uploaded, stored, and managed on a server.
 
 ---
 
 ## 🚀 Features
 
-* 🔐 User Authentication (Login/Register)
-* 📁 File Upload System (documents/images)
-* 🏠 Housing Allocation Management
-* 📡 API-based communication (Frontend ↔ Backend)
-* ⚡ Fast and responsive UI
-* 🛡️ Secure password handling
+* 📤 Upload files (images, documents, etc.)
+* 📂 Store files on the server
+* 👀 View uploaded files
+* ❌ Basic validation (file type / size)
+* 🧾 Simple and clean user interface
 
 ---
 
-## 🧱 Tech Stack
+## 🧱 Technologies Used
 
-### Frontend
-
-* Next.js (React Framework)
-* TypeScript
-* Tailwind CSS
-
-### Backend
-
-* Node.js
-* Express.js
-* TypeScript
-
-### Database
-
-* PostgreSQL
-* Drizzle ORM
-
----
-
-## 🔄 System Architecture
-
-Frontend (Next.js)
-⬇
-Backend API (Express.js)
-⬇
-Database (PostgreSQL)
+* **PHP** (Core backend logic)
+* **HTML & CSS** (Frontend)
+* **MySQL** (Optional for storing file info)
+* **XAMPP / WAMP** (Local server)
 
 ---
 
 ## 📂 Project Structure
 
-```
-project-root/
+```id="8j0l7t"
+project-folder/
 │
-├── client/        # Frontend (Next.js)
-├── server/        # Backend (Express)
-├── db/            # Database configuration
-├── uploads/       # Uploaded files
-└── package.json
+├── index.php        # Main upload page
+├── upload.php       # File upload logic
+├── uploads/         # Stored files
+├── style.css        # Styling
+└── config.php       # Database connection (optional)
 ```
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Setup Instructions
 
-### 1. Clone the repository
+### 1. Install Local Server
 
-```
-git clone <your-repo-url>
-cd HousingAllocationSystem
-```
+Install:
 
-### 2. Install dependencies
+* XAMPP or WAMP
 
-#### Frontend
+---
 
-```
-cd client
-npm install
-```
+### 2. Move Project
 
-#### Backend
+Copy the project folder to:
 
-```
-cd ../server
-npm install
+```id="8rmf7q"
+htdocs/   (for XAMPP)
 ```
 
 ---
 
-### 3. Setup Environment Variables
+### 3. Start Server
 
-Create a `.env` file in `/server`:
+* Start **Apache**
+* Start **MySQL** (if using database)
 
-```
-DATABASE_URL=your_postgresql_connection
-JWT_SECRET=your_secret_key
+---
+
+### 4. Open in Browser
+
+```id="d3jzba"
+http://localhost/project-folder
 ```
 
 ---
 
-### 4. Run the Project
+## 📤 How It Works
 
-#### Start Backend
-
-```
-cd server
-npm run dev
-```
-
-#### Start Frontend
-
-```
-cd client
-npm run dev
-```
+1. User selects a file
+2. Clicks upload
+3. PHP processes the file
+4. File is stored in `/uploads` folder
+5. (Optional) File info saved in database
 
 ---
 
-## 🌐 Usage
+## 🔐 Basic Security
 
-1. Register a new account
-2. Login to the system
-3. Upload required files
-4. View housing allocation status
-
----
-
-## 📸 Screenshots
-
-(Add your screenshots here)
+* File type checking
+* File size limit
+* Prevent duplicate file names
 
 ---
 
 ## 🛠️ Future Improvements
 
-* Admin dashboard
-* File validation & size limits
-* Email notifications
-* Better UI/UX
+* User login system
+* File download feature
+* Drag & drop upload
+* Better UI design
 
 ---
 
 ## 👨‍💻 Author
 
-Victor — Computer Science Student
+Victor — 3rd Year Computer Science Student
 
 ---
 
 ## 📄 License
 
-This project is for educational purposes.
+This project is for educational purposes only.
